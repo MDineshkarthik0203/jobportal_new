@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block content %}
+
+<h2>My Posted Jobs</h2>
+
+{% for job in jobs %}
+<div class="job-card">
+  <h3>{{ job.title }}</h3>
+  <p>{{ job.company }}</p>
+
+  <a href="/job-applications/{{ job.id }}/">View Applications</a>
+</div>
+{% endfor %} {% endblock %}

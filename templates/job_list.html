@@ -1,0 +1,32 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="feed">
+  {% for job in jobs %}
+  <div class="job-post">
+    <div class="job-header">
+      <h3>{{ job.title }}</h3>
+      <p class="company">🏢 Tech Company</p>
+    </div>
+
+    <p class="desc">{{ job.description }}</p>
+
+    <div class="job-meta">
+      <span>📍 {{ job.location }}</span>
+      <span>💰 ₹{{ job.salary }}</span>
+    </div>
+
+    <div class="job-actions">
+      {% if job.id in applied_jobs %}
+      <button class="applied">✔ Applied</button>
+      {% else %}
+      <form method="post" action="/apply/{{ job.id }}/">
+        {% csrf_token %}
+        <button class="apply">Apply</button>
+      </form>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

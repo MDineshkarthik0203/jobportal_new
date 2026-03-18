@@ -1,0 +1,106 @@
+/* Background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f2ef;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-left h2 {
+    color: #0a66c2;
+}
+
+/* Search */
+.search-bar {
+    padding: 8px;
+    width: 300px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Right */
+.nav-right a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #555;
+}
+
+/* Main */
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Feed */
+.feed {
+    width: 600px;
+}
+
+/* Job Card */
+.job-post {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Header */
+.job-header h3 {
+    margin: 0;
+}
+
+.company {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Description */
+.desc {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Meta */
+.job-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+    font-size: 14px;
+}
+
+/* Actions */
+.job-actions {
+    margin-top: 10px;
+}
+
+/* Buttons */
+.apply {
+    background: #0a66c2;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.apply:hover {
+    background: #004182;
+}
+
+.applied {
+    background: #d1d5db;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
